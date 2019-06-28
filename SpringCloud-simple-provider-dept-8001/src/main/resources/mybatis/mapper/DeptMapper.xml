@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.test.dao.DeptMapper" >
+  <resultMap id="BaseResultMap" type="com.test.pojo.Dept" >
+    <id column="deptNo" property="deptNo" jdbcType="BIGINT" />
+    <result column="dName" property="dName" jdbcType="VARCHAR" />
+    <result column="db_source" property="db_source" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    deptNo, dName, db_source
+  </sql>
+
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select
+    <include refid="Base_Column_List"/>
+    from dept
+  </select>
+
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List"/>
+    from dept
+    where deptNo = #{deptNo,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from dept
+    where deptNo = #{deptNo,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.test.pojo.Dept" >
+    insert into dept (deptNo, dName, db_source
+      )
+    values (#{deptNo,jdbcType=BIGINT}, #{dName,jdbcType=VARCHAR}, #{db_source,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.test.pojo.Dept" >
+    insert into dept
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="deptNo != null" >
+        deptNo,
+      </if>
+      <if test="dName != null" >
+        dName,
+      </if>
+      <if test="db_source != null" >
+        db_source,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="deptNo != null" >
+        #{deptNo,jdbcType=BIGINT},
+      </if>
+      <if test="dName != null" >
+        #{dName,jdbcType=VARCHAR},
+      </if>
+      <if test="db_source != null" >
+        DATABASE(),
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.test.pojo.Dept" >
+    update dept
+    <set >
+      <if test="dName != null" >
+        dName = #{dName,jdbcType=VARCHAR},
+      </if>
+      <if test="db_source != null" >
+        db_source = #{db_source,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where deptNo = #{deptNo,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.test.pojo.Dept" >
+    update dept
+    set dName = #{dName,jdbcType=VARCHAR},
+      db_source = #{db_source,jdbcType=VARCHAR}
+    where deptNo = #{deptNo,jdbcType=BIGINT}
+  </update>
+</mapper>

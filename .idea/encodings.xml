@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloud-simple-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloud-simple-config-3344" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloud-simple-config-client-3355" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloud-simple-consumer-dept-80" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloud-simple-consumer-dept-feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloud-simple-consumer-hystrix-dashboard" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloud-simple-eureka-7001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloud-simple-eureka-7002" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloud-simple-eureka-7003" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloud-simple-provider-dept-8001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloud-simple-provider-dept-8002" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloud-simple-provider-dept-8003" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloud-simple-provider-dept-hystrix-8001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloud-simple-zuul-gateway-9527" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,8 @@
+#配置文件：用户级 《 系统级
+spring:
+  application:
+    name: springcloud-config-client
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false

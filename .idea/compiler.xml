@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="SpringCloud-simple-api" />
+        <module name="SpringCloud-simple-config-3344" />
+        <module name="SpringCloud-simple-config-client-3355" />
+        <module name="SpringCloud-simple-consumer-dept-80" />
+        <module name="SpringCloud-simple-consumer-dept-feign" />
+        <module name="SpringCloud-simple-consumer-hystrix-dashboard" />
+        <module name="SpringCloud-simple-eureka-7001" />
+        <module name="SpringCloud-simple-eureka-7002" />
+        <module name="SpringCloud-simple-eureka-7003" />
+        <module name="SpringCloud-simple-provider-dept-8001" />
+        <module name="SpringCloud-simple-provider-dept-8002" />
+        <module name="SpringCloud-simple-provider-dept-8003" />
+        <module name="SpringCloud-simple-provider-dept-hystrix-8001" />
+        <module name="SpringCloud-simple-zuul-gateway-9527" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="PREFER_TARGET_JDK_COMPILER" value="false" />
+  </component>
+</project>
